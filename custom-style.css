@@ -1,0 +1,435 @@
+/* Custom Styles for Bootstrap Overrides and Specific Elements */
+
+/* Body & Fonts */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8faff; /* Light background from previous styles */
+    color: #333333; /* Dark text from previous styles */
+}
+
+a {
+    cursor: pointer;
+}
+/* Header */
+.navbar-brand {
+    font-size: 30px; /* Equivalent to display-6 or similar */
+}
+
+/* Mobile menu from right */
+.navbar-collapse {
+    position: fixed;
+    top: 0;
+    right: -280px; /* Initially off-screen to the right */
+    width: 280px; /* Width of the mobile menu */
+    max-width: 80%; /* Max width for smaller screens */
+    height: 100vh; /* Full viewport height */
+    background-color: #f8faff; /* Match body background */
+    padding: 20px;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1050; /* Above regular content, below modals */
+    display: block; /* Ensure it's a block for transform */
+}
+
+.navbar-collapse.collapsing {
+    transform: translateX(0); /* During collapsing animation */
+}
+
+.navbar-collapse.show {
+    transform: translateX(-100%); /* Slide in from right */
+}
+
+.navbar-nav {
+    flex-direction: column; /* Stack nav items vertically */
+    align-items: flex-start; /* Align items to the left */
+    margin-top: 20px;
+}
+
+.navbar-nav .nav-item {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.navbar-nav .nav-link {
+    padding: 10px 0;
+    color: #333333;
+    font-size: 20px;
+    width: 100%;
+    transition: color 0.2s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #4a5cff;
+}
+
+/* Hide default collapse for larger screens */
+@media (min-width: 992px) { /* Bootstrap's 'lg' breakpoint for navbar-expand-lg */
+    .navbar-collapse {
+        position: static;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        padding: 0;
+        box-shadow: none;
+        transform: translateX(0) !important; /* Override mobile transform */
+        display: flex !important; /* Ensure it's flex on desktop */
+    }
+    .navbar-nav {
+        flex-direction: row; /* Back to horizontal */
+        margin-top: 0;
+    }
+    .navbar-nav .nav-item {
+        width: auto;
+        margin-bottom: 0;
+    }
+    .navbar-toggler {
+        display: none; /* Hide toggler on desktop */
+    }
+}
+
+
+/* Hero Section Specifics */
+.hero-section {
+    min-height: 600px; /* Fixed height for mobile */
+    background-image: linear-gradient(to bottom right, #f0f5ff, #f3e8ff); /* Custom gradient background */
+    position: relative; /* Ensure overlay works correctly */
+    padding-top: 5rem; /* Bootstrap py-5 is 3rem, adjusted for more space */
+    padding-bottom: 5rem;
+    overflow: hidden; /* Prevent content overflow */
+}
+
+.hero-section .object-fit-cover {
+    object-fit: cover;
+}
+
+.gradient-text {
+    background: linear-gradient(to right, #4a5cff, #8a2be2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Custom Buttons (Overriding Bootstrap defaults) */
+.custom-btn-primary {
+    padding: 16px 40px; /* px values */
+    font-size: 20px; /* px values */
+    line-height: 28px; /* px values */
+    font-weight: bold;
+    border-radius: 50px; /* Fully rounded */
+    background-image: linear-gradient(to right, #2563eb, #8b5cf6); /* Blue to Purple */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border: 2px solid white; /* White border */
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-btn-primary:hover {
+    background-image: linear-gradient(to right, #1d4ed8, #7c3aed); /* Darker on hover */
+    transform: scale(1.05);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+.custom-btn-secondary {
+    padding: 12px 32px; /* px values */
+    font-size: 18px; /* px values */
+    line-height: 28px; /* px values */
+    font-weight: 600;
+    color: #2563eb; /* Blue text */
+    border: 2px solid #2563eb; /* Blue border */
+    border-radius: 50px; /* Fully rounded */
+    transition: all 0.3s ease-in-out;
+    background-color: transparent; /* Ensure transparent background */
+}
+
+.custom-btn-secondary:hover {
+    background-color: #2563eb; /* Blue background on hover */
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Before/After Slider */
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+.slider-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    /* Removed absolute positioning from base slider-image */
+}
+
+.slider-image img {
+    pointer-events: none;
+}
+.slider-image.before { /* Ensure the 'before' image is always the full width */
+    position: relative; /* It defines the container's height */
+    z-index: 1; /* Ensure it's behind the 'after' image clipping */
+}
+.slider-image.after {
+    position: absolute; /* Position the 'after' image over 'before' */
+    top: 0;
+    left: 0;
+    height: 100%; /* Take full height of the container */
+    width: 50%; /* Initial split, controlled by JS */
+    overflow: hidden; /* This is the key for clipping */
+    z-index: 2; /* Ensure it's above the 'before' image */
+}
+.slider-image.after img { /* The actual image inside the 'after' clipping mask */
+    display: block;
+    /*width: 100%; !* Make image fill its parent's width *!*/
+    height: 100%; /* Make image fill its parent's height */
+    object-fit: cover; /* Ensure image covers the area without distortion */
+    position: absolute; /* Position it correctly within the clipped area */
+    left: 0; /* Keep it at the start of the clipped area */
+    pointer-events: none;
+}
+.slider-handle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    background-color: white;
+    cursor: ew-resize;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+.slider-handle::before {
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    border: 4px solid #4a5cff;
+    box-shadow: 0 0 0 4px rgba(74, 92, 255, 0.3);
+}
+.slider-label {
+    position: absolute;
+    top: 16px;
+    padding: 8px 16px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    z-index: 11;
+}
+.slider-label.before { left: 16px; }
+.slider-label.after { right: 16px; }
+
+/* Feature Card Specifics */
+.custom-card {
+    border-radius: 1rem; /* 16px */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05); /* Lighter shadow */
+}
+
+.feature-icon {
+    color: #4a5cff; /* primary-blue */
+}
+
+/* How It Works Specifics */
+.how-it-works-section .card {
+    border-radius: 1rem;
+}
+.how-it-works-section .img-fluid {
+    border-radius: 1rem;
+}
+
+/* Demos Section Specifics */
+.demos-section .card {
+    border-radius: 1rem;
+}
+
+/* Requirements Section Specifics */
+.requirements-section .card {
+    border-radius: 1rem;
+}
+.requirements-section .list-unstyled li {
+    position: relative;
+    padding-left: 20px; /* Space for custom bullet */
+    margin-bottom: 8px;
+}
+.requirements-section .list-unstyled li:before {
+    content: "\2022"; /* Bullet character */
+    color: #4a5cff; /* primary-blue */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Download Section Specifics */
+.custom-btn-secondary {
+    /* Already defined above, ensure it's used here */
+}
+
+/* FAQ Section Specifics */
+.custom-accordion .accordion-item {
+    border-radius: 1rem !important; /* Force border-radius */
+    overflow: hidden; /* Ensure content respects border-radius */
+    border: none; /* Remove default Bootstrap border */
+}
+
+.custom-accordion .accordion-button {
+    background-color: white;
+    color: #333333;
+    padding: 24px;
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 1px solid #e0e0e0;
+    transition: color 0.2s ease-in-out;
+}
+
+.custom-accordion .accordion-button:not(.collapsed) {
+    color: #4a5cff; /* primary-blue when open */
+    background-color: #f9fafb; /* Light background for open state */
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.125); /* Subtle shadow for open state */
+}
+
+.custom-accordion .accordion-button:focus {
+    box-shadow: none; /* Remove outline on focus */
+}
+
+.custom-accordion .accordion-body {
+    padding: 16px 24px;
+    color: #4b5563;
+}
+
+
+/* Footer Specifics */
+footer a {
+    transition: color 0.2s ease-in-out;
+}
+footer a:hover {
+    color: #4a5cff !important; /* primary-blue on hover, use !important to override Bootstrap utilities if needed */
+}
+
+/* Notification Styles */
+.notification {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(51, 51, 51, 0.9); /* Darker, slightly transparent */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden; /* Hide visually */
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+.notification.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Cookie Modal Styles */
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.modal-content-custom {
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) {
+    .hero-section {
+        min-height: 800px;
+        flex-direction: row;
+    }
+    .hero-section .row {
+        align-items: center;
+    }
+    .hero-content {
+        text-align: left;
+        padding-right: 32px;
+        margin-bottom: 0;
+    }
+    .hero-buttons {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .hero-slider-wrapper {
+        width: 50%;
+        padding-left: 32px;
+    }
+    /* Grid adjustments for md breakpoint */
+    .row-cols-md-2 > * {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+    .row-cols-md-3 > * {
+        flex: 0 0 auto;
+        width: 33.333333%;
+    }
+    .row-cols-md-4 > * {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+    .text-md-start {
+        text-align: left !important;
+    }
+    .mb-md-0 {
+        margin-bottom: 0 !important;
+    }
+    .pe-md-5 {
+        padding-right: 3rem !important; /* 48px */
+    }
+}
+
+@media (min-width: 992px) { /* Bootstrap's 'lg' breakpoint for navbar-expand-lg */
+    /* Overrides for desktop nav */
+    .navbar-collapse {
+        position: static;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        padding: 0;
+        box-shadow: none;
+        transform: translateX(0) !important;
+        display: flex !important;
+    }
+    .navbar-nav {
+        flex-direction: row;
+        margin-top: 0;
+    }
+    .navbar-nav .nav-item {
+        width: auto;
+        margin-bottom: 0;
+    }
+    .navbar-toggler {
+        display: none;
+    }
+
+    /* Grid adjustments for lg breakpoint */
+    .row-cols-lg-3 > * {
+        flex: 0 0 auto;
+        width: 33.333333%;
+    }
+    /* Features section: 2 columns on large screens */
+    #features .row-cols-lg-2 > * {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}

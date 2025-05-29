@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeepFace.space - AI Замена Лиц на Фото и Видео</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="32x32">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="custom-style.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#" style="color: #4a5cff;">DeepFace.space</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#features">Возможности</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#how-it-works">Как это работает</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#demos">Примеры</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#download">Скачать</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#faq">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<section class="hero-section py-5">
+<!--  <div class="position-absolute w-100 h-100 opacity-25" style="z-index: 1;">-->
+<!--    <img src="img/bg.jpg" alt="Abstract Background Shapes" class="w-100 h-100 object-fit-cover">-->
+<!--  </div>-->
+  <div class="container position-relative z-2">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-md-6 text-center text-md-start mb-4 mb-md-0 pe-md-5">
+        <h1 class="display-3 fw-bold mb-4 gradient-text">
+          AI Замена Лиц: Создавайте Видео и Фото Контент Нового Уровня.
+        </h1>
+        <p class="fs-4 text-secondary mb-5">
+          DeepFace.space — это ваш инструмент для создания мемов, deepfake-контента и персонализированных видео для инфлюенсеров. Работает локально, без сбора данных.
+        </p>
+        <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-md-start">
+          <a href="#download" class="btn btn-primary btn-lg custom-btn-primary">
+            <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h8"/><path d="m18 15-2 2-2-2"/><path d="M16 17V9"/><path d="M22 15v4c0 1.1-.9 2-2 2h-2"/><path d="M4 8h16"/><path d="M4 12h8"/></svg>
+            Скачать для Windows
+          </a>
+          <a href="#download" class="btn btn-primary btn-lg custom-btn-primary">
+            <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M7 11v-4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v4"/><path d="M12 17v-6"/></svg>
+            Скачать для Android
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6 position-relative z-2">
+        <div class="slider-container rounded-4 shadow-lg">
+          <img class="slider-image before" src="img/hero30.webp" alt="Оригинал">
+          <div class="slider-image after">
+            <img class="slider-image__inner" src="img/hero31.webp" alt="После Замены">
+          </div>
+          <div class="slider-handle"></div>
+          <span class="slider-label before">ДО</span>
+          <span class="slider-label after">ПОСЛЕ</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="features" class="py-5 bg-white">
+  <div class="container text-center">
+    <h2 class="display-4 fw-bold mb-5">Почему DeepFace.space?</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card h-100 p-4 border-0 shadow-sm custom-card">
+          <svg class="icon feature-icon mx-auto mb-3" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #4a5cff;"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          <h3 class="h4 fw-bold mb-2">Полная Конфиденциальность</h3>
+          <p class="text-secondary">Все операции происходят локально на вашем устройстве. Никаких загрузок в облако, никаких логов, никакого сбора данных.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-4 border-0 shadow-sm custom-card">
+          <svg class="icon feature-icon mx-auto mb-3" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #4a5cff;"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          <h3 class="h4 fw-bold mb-2">Высокое Качество AI</h3>
+          <p class="text-secondary">Используем оптимизированные AI-модели для реалистичной и естественной замены лиц на фото и в видео.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-4 border-0 shadow-sm custom-card">
+          <svg class="icon feature-icon mx-auto mb-3" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #4a5cff;"><path d="M17.5 10.5C17.5 14.5 12 22 12 22S6.5 14.5 6.5 10.5C6.5 7.03 9.03 4.5 12 4.5S17.5 7.03 17.5 10.5Z"/><circle cx="12" cy="10.5" r="2.5"/></svg>
+          <h3 class="h4 fw-bold mb-2">Без Водяных Знаков</h3>
+          <p class="text-secondary">Создавайте контент без ограничений и нежелательных водяных знаков. Ваше творчество — полностью ваше.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-4 border-0 shadow-sm custom-card">
+          <svg class="icon feature-icon mx-auto mb-3" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #4a5cff;"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+          <h3 class="h4 fw-bold mb-2">Простота Использования</h3>
+          <p class="text-secondary">Интуитивный интерфейс позволяет создавать впечатляющий контент в несколько кликов, без сложных настроек.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how-it-works" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="display-4 fw-bold mb-5">Как это работает?</h2>
+    <div class="row align-items-start g-5">
+      <div class="col-md-6">
+        <div class="d-flex flex-column gap-4 text-start">
+          <div class="card p-4 border-0 shadow-sm">
+            <h3 class="h5 fw-bold mb-2" style="color: #4a5cff;">1. Скачайте и Установите</h3>
+            <p class="text-secondary">Скачайте DeepFace.space для Windows или Android. Простая установка без лишних шагов.</p>
+          </div>
+          <div class="card p-4 border-0 shadow-sm">
+            <h3 class="h5 fw-bold mb-2" style="color: #4a5cff;">2. Выберите Медиа</h3>
+            <p class="text-secondary">Запустите программу. Выберите исходное видео (MP4, AVI, MOV) или изображение (JPG, PNG). Поддерживает разрешение до 4K для видео.</p>
+          </div>
+          <div class="card p-4 border-0 shadow-sm">
+            <h3 class="h5 fw-bold mb-2" style="color: #4a5cff;">3. Выберите Целевое Лицо</h3>
+            <p class="text-secondary">Перетащите изображение с лицом, которое вы хотите использовать. Наш AI автоматически обнаружит и выровняет лицо.</p>
+          </div>
+          <div class="card p-4 border-0 shadow-sm">
+            <h3 class="h5 fw-bold mb-2" style="color: #4a5cff;">4. Создайте и Экспортируйте</h3>
+            <p class="text-secondary">Нажмите 'Обработать'. AI-модель выполнит замену лица локально. Экспортируйте ваше новое видео или изображение. Без водяных знаков и внешних логов.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 d-flex justify-content-center align-items-center">
+        <img src="img/how.jpg" alt="Workflow Demonstration GIF" class="img-fluid rounded-4 shadow-lg border border-info-subtle">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="demos" class="py-5 bg-white">
+  <div class="container text-center">
+    <h2 class="display-4 fw-bold mb-3">Как DeepFace.space может вам помочь?</h2>
+    <p class="fs-5 text-secondary mb-5 mx-auto" style="max-width: 768px;">
+      DeepFace.space позволяет легко создавать впечатляющий контент с помощью AI-замены лиц. Посмотрите на эти примеры, чтобы вдохновиться!
+    </p>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      <div class="col">
+        <div class="card h-100 p-3 border-0 shadow-sm bg-light cursor-pointer example-card" data-example-index="0">
+          <img src="img/example-1.jpeg" alt="Мем Пример" class="card-img-top rounded-3 mb-3 shadow-sm">
+          <h3 class="h5 fw-bold mb-2">Создавайте Вирусные Мемы</h3>
+          <p class="text-secondary">Быстро заменяйте лица в популярных мемах, чтобы создать свой собственный вирусный контент.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-3 border-0 shadow-sm bg-light cursor-pointer example-card" data-example-index="1">
+          <img src="img/example-2.jpeg" alt="Сцена из Фильма" class="card-img-top rounded-3 mb-3 shadow-sm">
+          <h3 class="h5 fw-bold mb-2">Перевоплощайтесь в Любимых Героев</h3>
+          <p class="text-secondary">Вставляйте свое лицо или лица друзей в известные сцены из фильмов и клипов.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-3 border-0 shadow-sm bg-light cursor-pointer example-card" data-example-index="2">
+          <img src="img/example-3.jpeg" alt="Инфлюенсер Контент" class="card-img-top rounded-3 mb-3 shadow-sm">
+          <h3 class="h5 fw-bold mb-2">Персонализируйте Контент для Соцсетей</h3>
+          <p class="text-secondary">Создавайте уникальные и привлекательные видео для TikTok, Instagram и YouTube.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-3 border-0 shadow-sm bg-light cursor-pointer example-card" data-example-index="3">
+          <img src="img/example-4.jpeg" alt="Сатира Пример" class="card-img-top rounded-3 mb-3 shadow-sm">
+          <h3 class="h5 fw-bold mb-2">Создавайте Сатирические Deepfakes</h3>
+          <p class="text-secondary">Используйте инструмент для создания юмористических и сатирических видео с известными личностями.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-3 border-0 shadow-sm bg-light cursor-pointer example-card" data-example-index="4">
+          <img src="img/example-5.jpeg" alt="Крипто Троллинг" class="card-img-top rounded-3 mb-3 shadow-sm">
+          <h3 class="h5 fw-bold mb-2">Контент для Крипто-Сообщества</h3>
+          <p class="text-secondary">Создавайте мемы и троллинг-видео, актуальные для криптоинфлюенсеров и сообществ.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-3 border-0 shadow-sm bg-light cursor-pointer example-card" data-example-index="5">
+          <img src="img/example-6.jpeg" alt="Развлечения с Друзьями" class="card-img-top rounded-3 mb-3 shadow-sm">
+          <h3 class="h5 fw-bold mb-2">Развлечения с Друзьями</h3>
+          <p class="text-secondary">Удивите своих друзей, вставив их лица в смешные и неожиданные ситуации.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="requirements" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="display-4 fw-bold mb-5">Совместимость и Системные Требования</h2>
+    <div class="card p-5 border-0 shadow-lg custom-card mx-auto" style="max-width: 1024px;">
+      <h3 class="h4 fw-bold mb-4" style="color: #4a5cff;">DeepFace.space Client v0.9.1 Alpha</h3>
+
+      <p class="fw-semibold mb-2">Поддерживаемые Платформы:</p>
+      <ul class="list-unstyled mb-4 ps-4 text-start">
+        <li>Windows 10 (64-bit) и выше</li>
+        <li>Android 8.0 (Oreo) и выше</li>
+      </ul>
+
+      <p class="fw-semibold mb-2">Минимальные Требования к Оборудованию (для базовой функциональности):</p>
+      <ul class="list-unstyled mb-4 ps-4 text-start">
+        <li><span class="fw-bold">CPU:</span> Intel Core i5 (6-го поколения) / AMD Ryzen 5 или эквивалент</li>
+        <li><span class="fw-bold">RAM:</span> 8 ГБ</li>
+        <li><span class="fw-bold">Память:</span> 500 МБ свободного места на диске</li>
+      </ul>
+
+      <p class="fw-semibold mb-2">Рекомендуемые Требования для Лучшей Производительности и Качества (особенно для видео):</p>
+      <ul class="list-unstyled mb-4 ps-4 text-start">
+        <li><span class="fw-bold">CPU:</span> Intel Core i7 (8-го поколения+) / AMD Ryzen 7 (2-го поколения+)</li>
+        <li><span class="fw-bold">GPU (Рекомендуется NVIDIA):</span> NVIDIA GeForce RTX 2060 (или эквивалент) с 6 ГБ VRAM или более.
+          <span class="d-block fst-italic text-muted" style="font-size: 14px;">Примечание: AMD GPU поддерживаются, но могут иметь более медленное время обработки из-за оптимизации для CUDA.</span></li>
+        <li><span class="fw-bold">RAM:</span> 16 ГБ или более</li>
+        <li><span class="fw-bold">Память:</span> SSD рекомендуется для более быстрой загрузки/сохранения.</li>
+      </ul>
+
+      <p class="fw-semibold mb-2">Зависимости:</p>
+      <ul class="list-unstyled ps-4 text-start">
+        <li>Visual C++ Redistributable (клиент Windows включает установщик)</li>
+        <li>Подключение к Интернету не требуется после первоначальной загрузки.</li>
+        <li>Никаких внешних API или облачных сервисов.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="download" class="py-5 bg-white">
+  <div class="container text-center">
+    <h2 class="display-4 fw-bold mb-5">Скачайте DeepFace.space</h2>
+    <p class="fs-5 text-secondary mb-5 mx-auto" style="max-width: 768px;">
+      Версия "до минуты видео" — бесплатная, изображения — без ограничений.
+      Создавайте контент без водяных знаков и регистрации.
+    </p>
+    <div class="d-flex flex-column flex-md-row gap-4 justify-content-center mb-5">
+      <a href="#" class="btn btn-primary btn-lg custom-btn-primary">
+        <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h8"/><path d="m18 15-2 2-2-2"/><path d="M16 17V9"/><path d="M22 15v4c0 1.1-.9 2-2 2h-2"/><path d="M4 8h16"/><path d="M4 12h8"/></svg>
+        Скачать DeepFace.space для Windows
+      </a>
+      <a href="#" class="btn btn-primary btn-lg custom-btn-primary">
+        <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M7 11v-4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v4"/><path d="M12 17v-6"/></svg>
+        Скачать DeepFace.space для Android
+      </a>
+    </div>
+
+    <h3 class="display-5 fw-bold mb-4">Поддержите Независимую Разработку</h3>
+    <p class="fs-5 text-secondary mb-5 mx-auto" style="max-width: 768px;">
+      DeepFace.space — это бесплатный проект, основанный на открытом исходном коде. Мы верим в неограниченный доступ к AI-инструментам и бескомпромиссную конфиденциальность. Если вы считаете наш инструмент полезным и хотите поддержать дальнейшее развитие, рассмотрите возможность пожертвования.
+    </p>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100 p-4 border-0 shadow-sm bg-light text-center">
+          <h4 class="h5 fw-bold mb-3" style="color: #4a5cff;">Bitcoin (BTC)</h4>
+          <img src="https://placehold.co/150x150/4a5cff/ffffff?text=BTC+QR" alt="BTC QR Code" class="mx-auto mb-3 rounded">
+          <p class="font-monospace small text-dark-emphasis text-break">bc1qxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+          <button onclick="copyToClipboard('bc1qxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')" class="btn custom-btn-secondary mt-3">Копировать адрес</button>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-4 border-0 shadow-sm bg-light text-center">
+          <h4 class="h5 fw-bold mb-3" style="color: #4a5cff;">Ethereum (ETH)</h4>
+          <img src="https://placehold.co/150x150/4a5cff/ffffff?text=ETH+QR" alt="ETH QR Code" class="mx-auto mb-3 rounded">
+          <p class="font-monospace small text-dark-emphasis text-break">0xXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+          <button onclick="copyToClipboard('0xXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')" class="btn custom-btn-secondary mt-3">Копировать адрес</button>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-4 border-0 shadow-sm bg-light text-center">
+          <h4 class="h5 fw-bold mb-3" style="color: #4a5cff;">USDT (TRC20)</h4>
+          <img src="https://placehold.co/150x150/4a5cff/ffffff?text=USDT+QR" alt="USDT QR Code" class="mx-auto mb-3 rounded">
+          <p class="font-monospace small text-dark-emphasis text-break">TXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+          <button onclick="copyToClipboard('TXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')" class="btn custom-btn-secondary mt-3">Копировать адрес</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="display-4 fw-bold text-center mb-5">Часто Задаваемые Вопросы</h2>
+    <div class="accordion custom-accordion mx-auto" id="faqAccordion" style="max-width: 768px;">
+      <div class="accordion-item shadow-sm mb-3 rounded-3">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            DeepFace.space действительно работает офлайн?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-secondary">
+            Да, вся обработка выполняется локально на вашем устройстве. Мы не собираем никаких данных и не отправляем ничего на внешние серверы.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item shadow-sm mb-3 rounded-3">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Оставляет ли программа какие-либо следы или логи?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-secondary">
+            Нет, программа разработана таким образом, чтобы работать без создания постоянных логов вашей активности или контента.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item shadow-sm mb-3 rounded-3">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Почему нет "Pro" версии или подписки?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-secondary">
+            DeepFace.space стремится быть бесплатным и доступным. Мы полагаемся на поддержку сообщества (пожертвования) для обслуживания и будущих улучшений.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item shadow-sm mb-3 rounded-3">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            Что делать, если качество замены не идеально?
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-secondary">
+            Качество может отличаться в зависимости от разрешения исходного видео, освещения и мощности GPU. Экспериментируйте с различными входными данными и убедитесь, что ваше оборудование соответствует рекомендуемым требованиям.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item shadow-sm mb-3 rounded-3">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            Могу ли я использовать его в коммерческих целях?
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-secondary">
+            Хотя инструмент является бесплатным для использования, проверьте лицензирование базовых AI-моделей с открытым исходным кодом, если вы планируете широкое коммерческое использование.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item shadow-sm mb-3 rounded-3">
+        <h2 class="accordion-header" id="headingSix">
+          <button class="accordion-button collapsed fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+            Я нашел ошибку. Как сообщить о ней?
+          </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-secondary">
+            На данный момент, пожалуйста, используйте электронную почту для связи, указанную ниже. Возможно, в будущем мы создадим страницу GitHub Issues.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-dark text-white py-5">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-4 g-4 text-center text-md-start">
+      <div class="col">
+        <h3 class="h5 fw-bold mb-3" style="color: #4a5cff;">DeepFace.space</h3>
+        <p class="small text-white-50">
+          Ваш инструмент для конфиденциальной AI-замены лиц на фото и видео. Создавайте мемы, deepfake-контент и многое другое.
+        </p>
+      </div>
+
+      <div class="col">
+        <h4 class="h6 fw-bold mb-3">Ресурсы</h4>
+        <ul class="list-unstyled small text-white-50">
+          <li><a href="#how-it-works" class="text-decoration-none text-white-50">Как это работает</a></li>
+          <li><a href="#demos" class="text-decoration-none text-white-50">Примеры</a></li>
+          <li><a href="#requirements" class="text-decoration-none text-white-50">Требования</a></li>
+          <li><a href="#faq" class="text-decoration-none text-white-50">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h4 class="h6 fw-bold mb-3">Правовая информация</h4>
+        <ul class="list-unstyled small text-white-50">
+          <li><a href="#" class="text-decoration-none text-white-50">Политика Конфиденциальности</a></li>
+          <li><a href="#" class="text-decoration-none text-white-50">Условия Использования</a></li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h4 class="h6 fw-bold mb-3">Свяжитесь с нами</h4>
+        <p class="small text-white-50 mb-2">Вопросы или предложения?</p>
+        <a href="mailto:support@deepface.space" class="small text-info text-decoration-none">support@deepface.space</a>
+      </div>
+    </div>
+    <div class="border-top border-secondary-subtle mt-4 pt-4 text-center">
+      <p class="small text-white-50 mb-0">&copy; 2024 DeepFace.space. Все права защищены.</p>
+    </div>
+  </div>
+</footer>
+
+<div id="notification" class="notification"></div>
+
+<div id="cookie-modal-overlay" class="modal-backdrop">
+  <div class="modal-content-custom bg-white p-4 rounded-3 shadow-lg text-center" style="max-width: 500px;">
+    <h3 class="h4 fw-bold mb-3">Политика использования файлов cookie</h3>
+    <p class="text-secondary mb-4">
+      Мы используем файлы cookie для улучшения вашего опыта на нашем сайте. Продолжая использовать DeepFace.space, вы соглашаетесь с нашей политикой использования файлов cookie.
+    </p>
+    <button id="accept-cookies-btn" class="btn btn-primary custom-btn-primary px-4 py-2">Принять</button>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
