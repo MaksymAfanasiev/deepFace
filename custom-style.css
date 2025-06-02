@@ -555,3 +555,8 @@ footer a:hover {
         width: 50%;
     }
 }
+/* Pricing table icons */
+.list-unstyled .icon {
+    vertical-align: middle;
+    margin-right: 8px;
+}
