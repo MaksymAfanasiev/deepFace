@@ -19,72 +19,75 @@ function copyToClipboard(text) {
   showNotification('Скопировано!');
 }
 
-// Before/After Slider functionality
-document.addEventListener('DOMContentLoaded', () => {
-  const sliderContainer = document.querySelector('.slider-container');
-  if (!sliderContainer) return;
-
-  const afterImageContainer = sliderContainer.querySelector('.slider-image.after');
-  const sliderHandle = sliderContainer.querySelector('.slider-handle');
+// Global Slider Functionality for reusable Before/After sliders
+function initializeBeforeAfterSlider(container) {
+  const afterImage = container.querySelector('.interactive-slider-image.after');
+  // const afterImageActual = afterImage.querySelector('img'); // Get the actual img tag
+  const sliderHandle = container.querySelector('.interactive-slider-handle');
   let isDragging = false;
 
   // Set initial width based on container
-  const updateSliderWidth = () => {
-    const containerWidth = sliderContainer.offsetWidth;
-    afterImageContainer.style.width = (containerWidth / 2) + 'px';
-    sliderHandle.style.left = (containerWidth / 2) + 'px';
+  const updateSliderWidth = (x) => {
+    const containerWidth = container.offsetWidth;
+    // Clamp x within container bounds
+    x = Math.max(0, Math.min(x, containerWidth));
+
+    afterImage.style.width = x + 'px';
+    sliderHandle.style.left = x + 'px';
+
+    // Adjust the position of the *actual image* inside the clipped container
+    // to keep it aligned with the 'before' image
+    // afterImageActual.style.marginLeft = -x + 'px';
+    // afterImageActual.style.width = containerWidth + 'px'; // Ensure image inside is full width of original
   };
 
-  // Initial call and update on resize
-  updateSliderWidth();
-  window.addEventListener('resize', updateSliderWidth);
+  // Initial call
+  // Use requestAnimationFrame to ensure layout is stable
+  requestAnimationFrame(() => updateSliderWidth(container.offsetWidth / 2));
 
+
+  // Mouse events
   sliderHandle.addEventListener('mousedown', (e) => {
     isDragging = true;
-    sliderContainer.style.cursor = 'ew-resize';
+    container.style.cursor = 'ew-resize';
+    e.preventDefault(); // Prevent default drag behavior
   });
 
-  sliderContainer.addEventListener('mouseup', () => {
+  container.addEventListener('mouseup', () => {
     isDragging = false;
-    sliderContainer.style.cursor = 'default';
+    container.style.cursor = 'default';
   });
 
-  sliderContainer.addEventListener('mousemove', (e) => {
+  container.addEventListener('mousemove', (e) => {
     if (!isDragging) return;
-
-    const containerRect = sliderContainer.getBoundingClientRect();
+    const containerRect = container.getBoundingClientRect();
     let x = e.clientX - containerRect.left;
-
-    // Clamp x within container bounds
-    x = Math.max(0, Math.min(x, containerRect.width));
-
-    afterImageContainer.style.width = x + 'px';
-    sliderHandle.style.left = x + 'px';
+    updateSliderWidth(x);
   });
 
   // Touch events for mobile
   sliderHandle.addEventListener('touchstart', (e) => {
     isDragging = true;
+    container.style.cursor = 'ew-resize';
     e.preventDefault(); // Prevent scrolling
   });
 
-  sliderContainer.addEventListener('touchend', () => {
+  container.addEventListener('touchend', () => {
     isDragging = false;
+    container.style.cursor = 'default';
   });
 
-  sliderContainer.addEventListener('touchmove', (e) => {
+  container.addEventListener('touchmove', (e) => {
     if (!isDragging || !e.touches[0]) return;
-
-    const containerRect = sliderContainer.getBoundingClientRect();
+    const containerRect = container.getBoundingClientRect();
     let x = e.touches[0].clientX - containerRect.left;
-
-    // Clamp x within container bounds
-    x = Math.max(0, Math.min(x, containerRect.width));
-
-    afterImageContainer.style.width = x + 'px';
-    sliderHandle.style.left = x + 'px';
+    updateSliderWidth(x);
   });
-});
+
+  // Update on resize
+  new ResizeObserver(() => updateSliderWidth(container.offsetWidth / 2)).observe(container);
+}
+
 
 // Cookie Policy Popup
 const cookieModalOverlay = document.getElementById('cookie-modal-overlay');
@@ -127,5 +130,13 @@ document.querySelectorAll('nav a.nav-link').forEach(anchor => {
         bsCollapseInstance.hide();
       }
     }
+  });
+});
+
+
+// Initialize all interactive sliders in the Demos section
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.interactive-slider-container').forEach(container => {
+    initializeBeforeAfterSlider(container);
   });
 });
