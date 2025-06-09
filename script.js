@@ -140,3 +140,17 @@ document.addEventListener('DOMContentLoaded', () => {
     initializeBeforeAfterSlider(container);
   });
 });
+
+// Form submission notification
+document.addEventListener('DOMContentLoaded', () => {
+  const contactForm = document.querySelector('#contact form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent default form submission
+
+      // For demonstration purposes, just show notification and clear form
+      showNotification('Сообщение успешно отправлено! Мы свяжемся с вами в ближайшее время.');
+      this.reset(); // Clear form fields
+    });
+  }
+});
