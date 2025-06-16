@@ -375,6 +375,54 @@ a {
     display: block;
 }
 
+/* Pricing Card Specifics */
+.pricing-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Распределяет содержимое по высоте */
+    align-items: center; /* Центрирует элементы внутри карточки */
+}
+
+.pricing-card .display-5 {
+    margin-bottom: 0; /* Убираем стандартный отступ */
+}
+
+.pricing-card .text-decoration-line-through {
+    color: #6c757d !important; /* text-muted from Bootstrap */
+    margin-bottom: 0.5rem; /* 8px */
+}
+
+.pricing-card .pricing-trial-info {
+    margin-bottom: 1rem; /* 16px */
+}
+
+.pricing-card .pricing-post-trial-info {
+    text-align: center;
+    margin-top: 0.5rem; /* 8px */
+    color: #6c757d; /* text-secondary */
+}
+
+/* Pro Plan Highlight */
+.pricing-card-pro-highlight {
+    border: 3px solid #4a5cff !important; /* Синяя рамка */
+    transform: scale(1.05); /* Немного увеличиваем */
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important; /* Усиленная тень */
+    z-index: 1; /* Чтобы был поверх других карточек */
+}
+
+/* Адаптация для Pro Plan на мобильных, чтобы он был по центру */
+@media (min-width: 768px) {
+    #download .row.justify-content-center .col:nth-child(2) {
+        order: 0; /* Ensures Pro plan is always in the middle column on md and up */
+    }
+    #download .row.justify-content-center .col:nth-child(1) {
+        order: -1; /* Puts Demo first */
+    }
+    #download .row.justify-content-center .col:nth-child(3) {
+        order: 1; /* Puts Standard last */
+    }
+}
+
 .style-card-overlay {
     position: absolute;
     bottom: 0;

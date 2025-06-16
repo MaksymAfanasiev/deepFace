@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeepFace.space – Замена Лиц с Помощью AI</title>
+  <meta name="description" content="DeepFace.space — локальный AI-инструмент для замены лиц на фото и видео. Создавайте deepfake-контент, мемы и видео без интернета и водяных знаков.">
+  <meta name="keywords" content="AI замена лиц, face swap, deepfake, видео редактирование, мемы, конфиденциальность, без интернета, локальная обработка">
+  <meta name="author" content="DeepFace.space Team">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="custom-style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<header>
+  <nav class="navbar navbar-expand-xl navbar-expand-xl navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#" style="color: #4a5cff;">DeepFace.space</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#features">Возможности</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#how-it-works">Как это работает</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#demos">Примеры</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#requirements">Совместимость</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ai-model">AI-модель</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#download">Скачать</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#faq">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<section class="hero-section hero-video-background py-5">
+  <video autoplay loop muted playsinline class="hero-bg-video">
+    <source src="video/hero-video.mp4" type="video/mp4">
+    Ваш браузер не поддерживает видео.
+  </video>
+  <div class="position-absolute w-100 h-100 hero-bg-overlay"></div>
+  <div class="container position-relative z-2 text-center d-flex flex-column justify-content-center align-items-center" style="min-height: calc(100vh - 56px);">
+    <h1 class="display-3 fw-bold mb-4 gradient-text">Преобразите лицо в видео и фото с помощью AI — за минуты</h1>
+    <p class="fs-4 text-light mb-5">Локальная замена лиц без интернета и водяных знаков. Ваши данные — только ваши.</p>
+    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+      <a href="#download" class="btn btn-primary btn-lg custom-btn-primary">
+        <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h8"/><path d="m18 15-2 2-2-2"/><path d="M16 17V9"/><path d="M22 15v4c0 1.1-.9 2-2 2h-2"/><path d="M4 8h16"/><path d="M4 12h8"/></svg>
+        Скачать для Windows
+      </a>
+      <a href="#download" class="btn btn-primary btn-lg custom-btn-primary">
+        <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M7 11v-4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v4"/><path d="M12 17v-6"/></svg>
+        Скачать для Android
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="features" class="py-5 bg-white">
+  <div class="container text-center">
+    <h2 class="display-4 fw-bold mb-5">Почему выбирают DeepFace.space?</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card h-100 p-4 border-0 shadow-sm custom-card">
+          <svg class="icon feature-icon mx-auto mb-3" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #4a5cff;"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          <h3 class="h4 fw-bold mb-2">100% конфиденциальность</h3>
+          <p class="text-secondary">Никаких облаков. Никаких логов. Все обрабатывается только на вашем устройстве.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-4 border-0 shadow-sm custom-card">
+          <svg class="icon feature-icon mx-auto mb-3" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #4a5cff;"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          <h3 class="h4 fw-bold mb-2">Реалистичная замена лиц</h3>
+          <p class="text-secondary">Передовые AI-модели обеспечивают высокое качество и естественность результата.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-4 border-0 shadow-sm custom-card">
+          <svg class="icon feature-icon mx-auto mb-3" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #4a5cff;"><path d="M17.5 10.5C17.5 14.5 12 22 12 22S6.5 14.5 6.5 10.5C6.5 7.03 9.03 4.5 12 4.5S17.5 7.03 17.5 10.5Z"/><circle cx="12" cy="10.5" r="2.5"/></svg>
+          <h3 class="h4 fw-bold mb-2">Без Водяных Знаков</h3>
+          <p class="text-secondary">Никаких надписей поверх видео. Полный контроль над контентом.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-4 border-0 shadow-sm custom-card">
+          <svg class="icon feature-icon mx-auto mb-3" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #4a5cff;"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+          <h3 class="h4 fw-bold mb-2">Простой и быстрый интерфейс</h3>
+          <p class="text-secondary">Создавайте deepfake и мемы за пару кликов — без опыта и сложных настроек.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how-it-works" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="display-4 fw-bold mb-5">Как работает DeepFace.space?</h2>
+    <div class="row align-items-start g-5">
+      <div class="col-md-6">
+        <div class="d-flex flex-column gap-4 text-start">
+          <div class="card p-4 border-0 shadow-sm">
+            <h3 class="h5 fw-bold mb-2" style="color: #4a5cff;">1. Установите приложение</h3>
+            <p class="text-secondary">Скачайте и установите DeepFace.space на Windows или Android. Установка занимает меньше минуты.</p>
+          </div>
+          <div class="card p-4 border-0 shadow-sm">
+            <h3 class="h5 fw-bold mb-2" style="color: #4a5cff;">2. Загрузите медиа</h3>
+            <p class="text-secondary">Выберите фото или видео, которое хотите отредактировать. Поддерживаются форматы JPG, PNG, MP4, AVI и другие.</p>
+          </div>
+          <div class="card p-4 border-0 shadow-sm">
+            <h3 class="h5 fw-bold mb-2" style="color: #4a5cff;">3. Добавьте лицо</h3>
+            <p class="text-secondary">Загрузите изображение с лицом, которое хотите вставить. AI автоматически подстроит его под исходник.</p>
+          </div>
+          <div class="card p-4 border-0 shadow-sm">
+            <h3 class="h5 fw-bold mb-2" style="color: #4a5cff;">4. Получите результат</h3>
+            <p class="text-secondary">Нажмите «Обработать» — и получите финальное фото или видео без водяных знаков. Всё — на вашем устройстве.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 d-flex justify-content-center align-items-center">
+        <img src="img/how.png" alt="Workflow Demonstration GIF" class="img-fluid rounded-4 shadow-lg border border-info-subtle">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="demos" class="py-5 bg-white">
+  <div class="container text-center">
+    <h2 class="display-4 fw-bold mb-3">Как AI Face Swap может вам помочь?</h2>
+    <p class="fs-5 text-secondary mb-5 mx-auto" style="max-width: 768px;">
+      DeepFace.space позволяет легко создавать впечатляющий контент с помощью AI-замены лиц. Посмотрите на эти примеры, чтобы вдохновиться!
+    </p>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      <div class="col">
+        <div class="card h-100 p-3 border-0 shadow-sm bg-light demo-card-interactive">
+          <div class="interactive-slider-container rounded-3 shadow-sm mb-3">
+            <div class="interactive-slider-image after">
+              <img class="interactive-slider-image__inner" src="img/1.webp" alt="После">
+            </div>
+            <img class="interactive-slider-image before" src="img/1-1.webp" alt="До">
+            <div class="interactive-slider-handle"></div>
+          </div>
+          <h3 class="h5 fw-bold mb-2">
+            Face Swapper
+          </h3>
+          <p class="text-secondary">
+            Меняйте лица на фотографиях с высокой точностью и реалистичностью с помощью передовых алгоритмов искусственного интеллекта. Создавайте забавные коллажи или удивительные трансформации.
+          </p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-3 border-0 shadow-sm bg-light demo-card-interactive">
+          <div class="interactive-slider-container rounded-3 shadow-sm mb-3">
+            <div class="interactive-slider-image after">
+              <img class="interactive-slider-image__inner" src="img/2.webp" alt="После">
+            </div>
+            <img class="interactive-slider-image before" src="img/2-1.webp" alt="До">
+            <div class="interactive-slider-handle"></div>
+          </div>
+          <h3 class="h5 fw-bold mb-2">
+            Video Face Swapper
+          </h3>
+          <p class="text-secondary">
+            Меняйте лица в видео, сохраняя мимику и движения. Эта функция идеально подходит для создания вирусных роликов, пародий или уникального контента для любой платформы.
+          </p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-3 border-0 shadow-sm bg-light demo-card-interactive">
+          <div class="interactive-slider-container rounded-3 shadow-sm mb-3">
+            <div class="interactive-slider-image after">
+              <img class="interactive-slider-image__inner" src="img/3.webp" alt="После">
+            </div>
+            <img class="interactive-slider-image before" src="img/3-1.webp" alt="До">
+            <div class="interactive-slider-handle"></div>
+          </div>
+          <h3 class="h5 fw-bold mb-2">
+            Multiple Face Swapper
+          </h3>
+          <p class="text-secondary">
+            Легко меняйте несколько лиц на групповых фотографиях. Идеально подходит для создания мемов с друзьями или превращения семейных снимков в нечто неожиданное.
+          </p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-3 border-0 shadow-sm bg-light demo-card-interactive">
+          <div class="interactive-slider-container rounded-3 shadow-sm mb-3">
+            <div class="interactive-slider-image after">
+              <img class="interactive-slider-image__inner" src="img/4-1.webp" alt="После">
+            </div>
+            <img class="interactive-slider-image before" src="img/4.webp" alt="До">
+            <div class="interactive-slider-handle"></div>
+          </div>
+          <h3 class="h5 fw-bold mb-2">
+            Model Clothes Swapper
+          </h3>
+          <p class="text-secondary">
+            Экспериментируйте с модой, меняя одежду и стили на фотографиях моделей. Получите представление о различных образах без необходимости физической примерки.
+          </p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-3 border-0 shadow-sm bg-light demo-card-interactive">
+          <div class="interactive-slider-container rounded-3 shadow-sm mb-3">
+            <div class="interactive-slider-image after">
+              <img class="interactive-slider-image__inner" src="img/5.webp" alt="После">
+            </div>
+            <img class="interactive-slider-image before" src="img/5-1.webp" alt="До">
+            <div class="interactive-slider-handle"></div>
+          </div>
+          <h3 class="h5 fw-bold mb-2">
+            GIF Face Swapper
+          </h3>
+          <p class="text-secondary">
+            Преобразуйте свои любимые GIF-анимации, меняя лица персонажей. Добавьте юмора или создайте уникальные реакции для чатов и социальных сетей.
+          </p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-3 border-0 shadow-sm bg-light demo-card-interactive">
+          <div class="interactive-slider-container rounded-3 shadow-sm mb-3">
+            <div class="interactive-slider-image after">
+              <img class="interactive-slider-image__inner" src="img/6.png" alt="После">
+            </div>
+            <img class="interactive-slider-image before" src="img/6-1.png" alt="До">
+            <div class="interactive-slider-handle"></div>
+          </div>
+          <h3 class="h5 fw-bold mb-2">
+            AI Headshot Generator
+          </h3>
+          <p class="text-secondary">
+            Создавайте профессиональные фотографии для резюме, LinkedIn или других целей с помощью искусственного интеллекта. Получите качественные снимки, которые подчеркнут ваш профессионализм.
+          </p>
+        </div>
+      </div>
+
+<!--      <div class="col">-->
+<!--        <div class="card h-100 p-0 border-0 shadow-sm bg-light demo-card-video">-->
+<!--          <video class="card-img-top rounded-3 shadow-sm" autoplay loop muted playsinline loading="lazy" poster="img/video-example-1.png">-->
+<!--            <source src="video/video-example-1.webm" type="video/webm">-->
+<!--            <source src="video/video-example-1.mp4" type="video/mp4">-->
+<!--            Ваш браузер не поддерживает видео.-->
+<!--          </video>-->
+<!--          <div class="demo-card-overlay rounded-bottom-3">-->
+<!--            <h3 class="h5 fw-bold mb-1 text-white">Создавайте Вирусные Мемы</h3>-->
+<!--            <p class="small text-white-50 mb-0">Быстро заменяйте лица в популярных мемах, чтобы создать свой собственный вирусный контент.</p>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="col">-->
+<!--        <div class="card h-100 p-0 border-0 shadow-sm bg-light demo-card-video">-->
+<!--          <video class="card-img-top rounded-3 shadow-sm" autoplay loop muted playsinline loading="lazy" poster="img/video-example-2.png">-->
+<!--            <source src="video/video-example-2.webm" type="video/webm">-->
+<!--            <source src="video/video-example-2.mp4" type="video/mp4">-->
+<!--            Ваш браузер не поддерживает видео.-->
+<!--          </video>-->
+<!--          <div class="demo-card-overlay rounded-bottom-3">-->
+<!--            <h3 class="h5 fw-bold mb-1 text-white">Перевоплощайтесь в Любимых Героев</h3>-->
+<!--            <p class="small text-white-50 mb-0">Вставляйте свое лицо или лица друзей в известные сцены из фильмов и клипов.</p>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="col">-->
+<!--        <div class="card h-100 p-3 border-0 shadow-sm bg-light">-->
+<!--          <img src="img/image-example-1.jpg" alt="Инфлюенсер Контент" class="card-img-top rounded-3 mb-3 shadow-sm demo-static-image">-->
+<!--          <h3 class="h5 fw-bold mb-2">Персонализируйте Контент для Соцсетей</h3>-->
+<!--          <p class="text-secondary">Создавайте уникальные и привлекательные видео для TikTok, Instagram и YouTube.</p>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="col">-->
+<!--        <div class="card h-100 p-3 border-0 shadow-sm bg-light">-->
+<!--          <img src="img/image-example-2.jpg" alt="Сатира Пример" class="card-img-top rounded-3 mb-3 shadow-sm demo-static-image">-->
+<!--          <h3 class="h5 fw-bold mb-2">Создавайте Сатирические Deepfakes</h3>-->
+<!--          <p class="text-secondary">Используйте инструмент для создания юмористических и сатирических видео с известными личностями.</p>-->
+<!--        </div>-->
+<!--      </div>-->
+    </div>
+  </div>
+</section>
+
+<section id="requirements" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="display-4 fw-bold mb-5">Совместимость и Системные Требования</h2>
+    <div class="card p-5 border-0 shadow-lg custom-card mx-auto" style="max-width: 1024px;">
+      <h3 class="h4 fw-bold mb-4" style="color: #4a5cff;">DeepFace.space Client v0.9.1 Alpha</h3>
+
+      <p class="fw-semibold mb-2">Поддерживаемые Платформы:</p>
+      <ul class="list-unstyled mb-4 ps-4 text-start">
+        <li>Windows 10 (64-bit) и выше</li>
+        <li>Android 8.0 (Oreo) и выше</li>
+      </ul>
+
+      <p class="fw-semibold mb-2">Минимальные Требования к Оборудованию (для базовой функциональности):</p>
+      <ul class="list-unstyled mb-4 ps-4 text-start">
+        <li><span class="fw-bold">CPU:</span> Intel Core i5 (6-го поколения) / AMD Ryzen 5 или эквивалент</li>
+        <li><span class="fw-bold">RAM:</span> 8 ГБ</li>
+        <li><span class="fw-bold">Память:</span> 500 МБ свободного места на диске</li>
+      </ul>
+
+      <p class="fw-semibold mb-2">Рекомендуемые Требования для Лучшей Производительности и Качества (особенно для видео):</p>
+      <ul class="list-unstyled mb-4 ps-4 text-start">
+        <li><span class="fw-bold">CPU:</span> Intel Core i7 (8-го поколения+) / AMD Ryzen 7 (2-го поколения+)</li>
+        <li><span class="fw-bold">GPU (Рекомендуется NVIDIA):</span> NVIDIA GeForce RTX 2060 (или эквивалент) с 6 ГБ VRAM или более.
+          <span class="d-block fst-italic text-muted" style="font-size: 14px;">Примечание: AMD GPU поддерживаются, но могут иметь более медленное время обработки из-за оптимизации для CUDA.</span></li>
+        <li><span class="fw-bold">RAM:</span> 16 ГБ или более</li>
+        <li><span class="fw-bold">Память:</span> SSD рекомендуется для более быстрой загрузки/сохранения.</li>
+      </ul>
+
+      <p class="fw-semibold mb-2">Зависимости:</p>
+      <ul class="list-unstyled ps-4 text-start">
+        <li>Visual C++ Redistributable (клиент Windows включает установщик)</li>
+        <li>Подключение к Интернету не требуется после первоначальной загрузки.</li>
+        <li>Никаких внешних API или облачных сервисов.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="ai-model" class="py-5 bg-white">
+  <div class="container">
+    <h2 class="display-4 fw-bold mb-5 text-center">Как работает наша AI-модель?</h2>
+    <p class="fs-5 text-secondary mb-5 mx-auto text-left">
+      В основе DeepFace.space лежит передовая нейронная сеть, разработанная для задач замены лиц и стилизации изображений/видео. Наша модель обучалась на огромных, тщательно подобранных массивах данных, включающих миллионы изображений и видео различных лиц, выражений, ракурсов и освещения.
+      <br><br>
+      Этот процесс обучения позволяет AI глубоко анализировать и понимать уникальные черты лица, такие как форма глаз, носа, рта, скул, а также мимику и текстуру кожи. Когда вы загружаете изображение или видео, модель детектирует ключевые точки лица, сопоставляет их с целевым лицом и бесшовно интегрирует, сохраняя при этом естественное освещение и тени исходного материала.
+      <br><br>
+      Мы постоянно улучшаем и дообучаем модель, чтобы повышать реалистичность и качество финального результата, минимизируя артефакты. Кроме того, мы имеем обширную библиотеку стилей, предоставляя вам все новые и уникальные возможности для творческого контента.
+    </p>
+
+    <h3 class="display-5 fw-bold mb-4 text-center">Библиотека стилей</h3>
+    <div class="row row-cols-2 row-cols-sm-3 row-cols-md-6 row-cols-lg-5 row-cols-xl-6 g-3">
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/1.webp" class="card-img-top rounded-3" alt="Grand Thief Auto style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Grand Thief Auto</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/2.webp" class="card-img-top rounded-3" alt="Retro Futurism style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Retro Futurism</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/3.webp" class="card-img-top rounded-3" alt="Modern Anime style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Modern Anime</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/4.webp" class="card-img-top rounded-3" alt="Gorillas style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Gorillas</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/5.webp" class="card-img-top rounded-3" alt="Ghibli style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Ghibli</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/6.webp" class="card-img-top rounded-3" alt="Inkpunk style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Inkpunk</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/7.webp" class="card-img-top rounded-3" alt="Claymation style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Claymation</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/8.webp" class="card-img-top rounded-3" alt="Springfield style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Springfield</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/9.webp" class="card-img-top rounded-3" alt="Rubber Hose style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Rubber Hose</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/10.webp" class="card-img-top rounded-3" alt="Anime style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Anime</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/11.webp" class="card-img-top rounded-3" alt="Cartoon style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Cartoon</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/12.webp" class="card-img-top rounded-3" alt="Christmas Cartoon style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Christmas Cartoon</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/13.webp" class="card-img-top rounded-3" alt="Victorian style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Victorian</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/14.webp" class="card-img-top rounded-3" alt="Glitch Techs style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Glitch Techs</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/15.webp" class="card-img-top rounded-3" alt="Fauvism style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Fauvism</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/16.webp" class="card-img-top rounded-3" alt="Glitch Techs style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Glitch Techs</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/17.webp" class="card-img-top rounded-3" alt="Van Gogh style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Van Gogh</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/18.webp" class="card-img-top rounded-3" alt="90-s Cartoon style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">90-s Cartoon</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/19.webp" class="card-img-top rounded-3" alt="90-s Cartoon Selfie style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">90-s Cartoon Selfie</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/20.webp" class="card-img-top rounded-3" alt="Illustration style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Illustration</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/21.webp" class="card-img-top rounded-3" alt="Paper Cut style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Paper Cut</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/22.webp" class="card-img-top rounded-3" alt="Nightmare style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Nightmare</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/23.webp" class="card-img-top rounded-3" alt="Voxel style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Voxel</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/24.webp" class="card-img-top rounded-3" alt="Cartoon Poster style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Cartoon Poster</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/25.webp" class="card-img-top rounded-3" alt="Star Clones style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Star Clones</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/26.webp" class="card-img-top rounded-3" alt="Cosmic style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Cosmic</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/27.webp" class="card-img-top rounded-3" alt="Sketch style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Sketch</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/28.webp" class="card-img-top rounded-3" alt="Pencil Anime style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Pencil Anime</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/29.webp" class="card-img-top rounded-3" alt="Zombie style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Zombie</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/30.webp" class="card-img-top rounded-3" alt="Five Nights Movie style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Five Nights Movie</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/31.webp" class="card-img-top rounded-3" alt="Cyberpunk style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Cyberpunk</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/32.webp" class="card-img-top rounded-3" alt="Blocky style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Blocky</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/33.webp" class="card-img-top rounded-3" alt="Comic Fantasy style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Comic Fantasy</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/34.webp" class="card-img-top rounded-3" alt="R&M style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">R&M</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/35.webp" class="card-img-top rounded-3" alt="Doll style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Doll</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/36.webp" class="card-img-top rounded-3" alt="Cartoon style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Cartoon</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/37.webp" class="card-img-top rounded-3" alt="Classic Cartoon style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Classic Cartoon</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/38.webp" class="card-img-top rounded-3" alt="Animated Spy style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Animated Spy</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/39.webp" class="card-img-top rounded-3" alt="Statue style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Statue</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/40.webp" class="card-img-top rounded-3" alt="L3GO style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">L3GO</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/41.webp" class="card-img-top rounded-3" alt="Ghibli style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Ghibli</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/42.webp" class="card-img-top rounded-3" alt="L3G0 Selfie style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">L3G0 Selfie</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/43.webp" class="card-img-top rounded-3" alt="Wooly style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Wooly</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/44.webp" class="card-img-top rounded-3" alt="Funko Pop style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Funko Pop</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/45.webp" class="card-img-top rounded-3" alt="Diablik style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Diablik</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/46.webp" class="card-img-top rounded-3" alt="Anime Elf style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Anime Elf</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/47.webp" class="card-img-top rounded-3" alt="Balloon style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Balloon</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/48.webp" class="card-img-top rounded-3" alt="Demonic style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Demonic</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/49.webp" class="card-img-top rounded-3" alt="Battle Royal style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Battle Royal</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/50.webp" class="card-img-top rounded-3" alt="Spider style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Spider</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/51.webp" class="card-img-top rounded-3" alt="Shkrek style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Shkrek</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/52.webp" class="card-img-top rounded-3" alt="Puppet Show style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Puppet Show</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/53.webp" class="card-img-top rounded-3" alt="Manga style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Manga</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/54.webp" class="card-img-top rounded-3" alt="The Legend style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">The Legend</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/55.webp" class="card-img-top rounded-3" alt="The Great Wave style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">The Great Wave</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/56.webp" class="card-img-top rounded-3" alt="Vampire style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Vampire</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/57.webp" class="card-img-top rounded-3" alt="Dark Bride style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Dark Bride</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/58.webp" class="card-img-top rounded-3" alt="Epic Fantasy style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Epic Fantasy</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/59.webp" class="card-img-top rounded-3" alt="Gringe Selfie style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Gringe Selfie</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/60.webp" class="card-img-top rounded-3" alt="Halloween Manga style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Halloween Manga</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/61.webp" class="card-img-top rounded-3" alt="Robots style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Robots</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/62.webp" class="card-img-top rounded-3" alt="Thanksgiving Food style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Thanksgiving Food</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 p-0 border-0 shadow-sm bg-light style-card">
+          <img src="img/styles/63.webp" class="card-img-top rounded-3" alt="Funko Dog style">
+          <div class="style-card-overlay rounded-bottom-3">
+            <h5 class="card-title fw-bold text-white mb-0">Funko Dog</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="download" class="py-5 bg-white">
+  <div class="container text-center">
+    <h2 class="display-4 fw-bold mb-5">Скачайте DeepFace.space</h2>
+    <p class="fs-5 text-secondary mb-5 mx-auto" style="max-width: 768px;">
+      Выберите план, который лучше всего соответствует вашим потребностям. Начните создавать потрясающий контент уже сегодня!
+    </p>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4 mb-5 justify-content-center align-items-center">
+      <div class="col">
+        <div class="card h-100 p-4 border-0 shadow-lg custom-card pricing-card">
+          <h3 class="h4 fw-bold mb-3" style="color: #4a5cff;">Демо</h3>
+          <p class="display-5 fw-bold mb-1">0 ₽</p>
+          <p class="text-decoration-line-through text-muted mb-2">2500 ₽ / мес.</p>
+          <p class="fs-6 text-secondary mb-3 pricing-trial-info">7 дней пробного периода</p>
+
+          <ul class="list-unstyled text-start mb-4">
+            <li class="mb-2"><svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#28a745" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Видео до 30 секунд</li>
+            <li class="mb-2"><svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="#28a745" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Изображения без ограничений</li>
+            <li class="mb-2 text-muted"><svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="#dc3545" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>Без водяных знаков</li>
+            <li class="text-muted"><svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="#dc3545" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>Приоритетная поддержка</li>
+          </ul>
+          <a href="#" class="btn btn-primary custom-btn-primary mt-auto">
+            Оценить бесплатно
+          </a>
+          <p class="small text-secondary mt-2 pricing-post-trial-info">после пробного периода: 2500₽ / мес.</p>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 p-4 border-0 shadow-lg custom-card pricing-card pricing-card-pro-highlight">
+          <h3 class="h4 fw-bold mb-3" style="color: #4a5cff;">Pro</h3>
+          <p class="display-5 fw-bold mb-1">7000 ₽</p>
+          <p class="text-decoration-line-through text-muted mb-2">9000 ₽ / мес.</p> <p class="fs-6 text-secondary mb-3 pricing-trial-info">2 дня пробного периода</p>
+
+          <ul class="list-unstyled text-start mb-4">
+            <li class="mb-2"><svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="#28a745" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Видео до 15 минут</li>
+            <li class="mb-2"><svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="#28a745" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Максимальное качество</li>
+            <li class="mb-2"><svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="#28a745" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Без водяных знаков</li>
+            <li class="mb-2"><svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="#28a745" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Приоритетная поддержка</li>
+            <li class="mb-2"><svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="#28a745" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Ранний доступ к новым функциям</li>
+          </ul>
+          <a href="#" class="btn btn-primary custom-btn-primary mt-auto">
+            Оценить бесплатно
+          </a>
+          <p class="small text-secondary mt-2 pricing-post-trial-info">после пробного периода: 7000₽ / мес.</p>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 p-4 border-0 shadow-lg custom-card pricing-card">
+          <h3 class="h4 fw-bold mb-3" style="color: #4a5cff;">Стандарт</h3>
+          <p class="display-5 fw-bold mb-1">5000 ₽</p>
+          <p class="text-decoration-line-through text-muted mb-2">7000 ₽ / мес.</p> <p class="fs-6 text-secondary mb-3 pricing-trial-info">4 дня пробного периода</p>
+
+          <ul class="list-unstyled text-start mb-4">
+            <li class="mb-2"><svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="#28a745" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Видео до 5 минут</li>
+            <li class="mb-2"><svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="#28a745" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Высокое качество</li>
+            <li class="mb-2"><svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="#28a745" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Без водяных знаков</li>
+            <li class="text-muted"><svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="#dc3545" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>Приоритетная поддержка</li>
+          </ul>
+          <a href="#" class="btn btn-primary custom-btn-primary mt-auto">
+            Оценить бесплатно
+          </a>
+          <p class="small text-secondary mt-2 pricing-post-trial-info">после пробного периода: 5000₽ / мес.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="display-4 fw-bold text-center mb-5">Часто Задаваемые Вопросы</h2>
+    <div class="accordion custom-accordion mx-auto" id="faqAccordion" style="max-width: 768px;">
+      <div class="accordion-item shadow-sm mb-3 rounded-3">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            DeepFace.space действительно работает офлайн?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-secondary">
+            Да, вся обработка выполняется локально на вашем устройстве. Мы не собираем никаких данных и не отправляем ничего на внешние серверы.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item shadow-sm mb-3 rounded-3">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Оставляет ли программа какие-либо следы или логи?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-secondary">
+            Нет, программа разработана таким образом, чтобы работать без создания постоянных логов вашей активности или контента.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item shadow-sm mb-3 rounded-3">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Какие есть тарифные планы и что входит в пробный период?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-secondary">
+            DeepFace.space предлагает три тарифных плана: Демо, Стандарт и Pro. Демо-версия предоставляет 7 дней бесплатного доступа с ограниченным функционалом. Планы Стандарт и Pro также включают пробные периоды (4 и 2 дня соответственно), после которых активируется месячная подписка. Подробное описание каждого плана и его преимуществ вы найдете в разделе '<a href="#download" class="text-info text-decoration-none">Скачать</a>'.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item shadow-sm mb-3 rounded-3">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            Что делать, если качество замены не идеально?
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-secondary">
+            Качество может отличаться в зависимости от разрешения исходного видео, освещения и мощности GPU. Экспериментируйте с различными входными данными и убедитесь, что ваше оборудование соответствует рекомендуемым требованиям.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item shadow-sm mb-3 rounded-3">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            Могу ли я использовать его в коммерческих целях?
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-secondary">
+            Хотя инструмент является бесплатным для использования, проверьте лицензирование базовых AI-моделей с открытым исходным кодом, если вы планируете широкое коммерческое использование.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item shadow-sm mb-3 rounded-3">
+        <h2 class="accordion-header" id="headingSix">
+          <button class="accordion-button collapsed fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+            Я нашел ошибку. Как сообщить о ней?
+          </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+          <div class="accordion-body text-secondary">
+            На данный момент, пожалуйста, используйте электронную почту для связи, указанную ниже. Возможно, в будущем мы создадим страницу GitHub Issues.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="display-4 fw-bold mb-3">Остались вопросы? Свяжитесь с нами!</h2>
+    <p class="fs-5 text-secondary mb-5 mx-auto" style="max-width: 768px;">
+      Мы ценим ваше мнение и готовы помочь. Вы можете задать вопрос или написать нам напрямую в Telegram, либо заполнить форму ниже.
+    </p>
+
+    <div class="d-flex justify-content-center mb-5">
+      <a href="https://t.me/ВАШ_ТЕЛЕГРАМ_БОТ_ЮЗЕРНЕЙМ" target="_blank" class="btn btn-primary btn-lg custom-btn-primary">
+        <svg class="icon me-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"></path><polyline points="7.5 7.5 12 12 16.5 7.5"></polyline></svg>
+        Написать в Telegram
+      </a>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6 text-start">
+        <form action="/" method="POST">
+          <div class="mb-3">
+            <label for="contactName" class="form-label fw-semibold">Ваше имя</label>
+            <input type="text" class="form-control" id="contactName" name="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="contactEmail" class="form-label fw-semibold">Ваш Email</label>
+            <input type="email" class="form-control" id="contactEmail" name="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="contactMessage" class="form-label fw-semibold">Сообщение</label>
+            <textarea class="form-control" id="contactMessage" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary custom-btn-primary w-100">Отправить сообщение</button>
+        </form>
+      </div>
+    </div>
+    <p class="small text-secondary mt-4">Обычно мы отвечаем в течение 24 часов.</p>
+  </div>
+</section>
+
+<footer class="bg-dark text-white py-5">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-4 g-4 text-center text-md-start">
+      <div class="col">
+        <h3 class="h5 fw-bold mb-3" style="color: #4a5cff;">DeepFace.space</h3>
+        <p class="small text-white-50">
+          Ваш инструмент для конфиденциальной AI-замены лиц на фото и видео. Создавайте мемы, deepfake-контент и многое другое.
+        </p>
+      </div>
+
+      <div class="col">
+        <h4 class="h6 fw-bold mb-3">Ресурсы</h4>
+        <ul class="list-unstyled small text-white-50">
+          <li><a href="#how-it-works" class="text-decoration-none text-white-50">Как это работает</a></li>
+          <li><a href="#demos" class="text-decoration-none text-white-50">Примеры</a></li>
+          <li><a href="#requirements" class="text-decoration-none text-white-50">Совместимость</a></li>
+          <li><a href="#ai-model" class="text-decoration-none text-white-50">AI-модель</a></li>
+          <li><a href="#faq" class="text-decoration-none text-white-50">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h4 class="h6 fw-bold mb-3">Правовая информация</h4>
+        <ul class="list-unstyled small text-white-50">
+          <li><a href="#" class="text-decoration-none text-white-50">Политика Конфиденциальности</a></li>
+          <li><a href="#" class="text-decoration-none text-white-50">Условия Использования</a></li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h4 class="h6 fw-bold mb-3">Свяжитесь с нами</h4>
+        <p class="small text-white-50 mb-2">Вопросы или предложения?</p>
+        <a href="mailto:support@deepface.space" class="small text-info text-decoration-none">support@deepface.space</a>
+      </div>
+    </div>
+    <div class="border-top border-secondary-subtle mt-4 pt-4 text-center">
+      <p class="small text-white-50 mb-0">&copy; 2024 DeepFace.space. Все права защищены.</p>
+    </div>
+  </div>
+</footer>
+
+<div id="notification" class="notification"></div>
+
+<div id="cookie-modal-overlay" class="modal-backdrop">
+  <div class="modal-content-custom bg-white p-4 rounded-3 shadow-lg text-center" style="max-width: 500px;">
+    <h3 class="h4 fw-bold mb-3">Политика использования файлов cookie</h3>
+    <p class="text-secondary mb-4">
+      Мы используем файлы cookie для улучшения вашего опыта на нашем сайте. Продолжая использовать DeepFace.space, вы соглашаетесь с нашей политикой использования файлов cookie.
+    </p>
+    <button id="accept-cookies-btn" class="btn btn-primary custom-btn-primary px-4 py-2">Принять</button>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
